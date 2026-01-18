@@ -21,6 +21,7 @@
     <quarkus.platform.version>3.0.0.CR1</quarkus.platform.version>
     <skipITs>true</skipITs>
     <surefire-plugin.version>3.0.0</surefire-plugin.version>
+    <postgresql.version>42.6.1</postgresql.version>
   </properties>
   <dependencyManagement>
     <dependencies>
