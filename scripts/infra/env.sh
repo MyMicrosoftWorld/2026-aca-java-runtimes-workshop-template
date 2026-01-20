@@ -8,15 +8,16 @@
 
 echo "Exporting environment variables..." 
 
-export PROJECT="java-runtimes"
+export PROJECT="java-runtimes-aca-sharprav2026"
 export RESOURCE_GROUP="rg-$PROJECT"
-export LOCATION="eastus"
+export LOCATION="eastus2"
 export TAG="$PROJECT"
 
 export LOG_ANALYTICS_WORKSPACE="log-$PROJECT"
 export CONTAINERAPPS_ENVIRONMENT="cae-$PROJECT"
 
-export UNIQUE_IDENTIFIER=${UNIQUE_IDENTIFIER:-${GITHUB_USER:-$(whoami)}}
+#export UNIQUE_IDENTIFIER=${UNIQUE_IDENTIFIER:-${GITHUB_USER:-$(whoami)}}
+export UNIQUE_IDENTIFIER="sharprav-java-aca"
 
 echo "Using unique identifier is: $UNIQUE_IDENTIFIER"
 echo "You can override it by setting it manually before running this script:"
