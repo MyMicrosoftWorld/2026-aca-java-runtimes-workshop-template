@@ -11,11 +11,13 @@ public class QuarkusResourceTest {
 
     @Test
     void testHelloEndpoint() {
-        given()
-        .when().get("/quarkus")
+
+        given().param("name", "Quarkus")
+        .when().get("/quarkus/hello")
         .then()
             .statusCode(200)
-            .body(is("Quarkus: hello"));
+            .body(is("{\"message\":\"Hello, Quarkus!\"}"));
+
     }
 
 
@@ -49,5 +51,6 @@ public class QuarkusResourceTest {
         .then()
             .statusCode(200);
     }
+    
     
 }
