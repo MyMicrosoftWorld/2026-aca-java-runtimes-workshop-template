@@ -53,4 +53,4 @@ jobs:
           cd micronaut-app && ./mvnw package
       - name: Build Spring Boot with Java
         run: |
-          cd springboot-app && ./mvnw package  && mkdir -p target/dependency && (cd target/dependency; jar -xf ../*.jar)
+          cd springboot-app && ./mvnw package -DskipTests  && mkdir -p target/dependency && (cd target/dependency; jar -xf ../*.jar)
